@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        .blog-post {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .image-caption {
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="blog-post">
+    <h1>欢迎来到我的个人博客</h1>
+    <p>这是使用GitHub Pages发布的第一个博客页面。以下展示两张图片，分别使用<strong>绝对路径</strong>和<strong>相对路径</strong>引用。</p>
+
+    <h2>1. 绝对路径引用图片（网络图片）</h2>
+    <p>图片URL：<code>https://picsum.photos/id/1/200/200</code></p>
+    <img src="https://picsum.photos/id/1/200/200" alt="绝对路径图片（来自网络）">
+    <div class="image-caption">图1：绝对路径引用（http://...）</div>
+
+    <h2>2. 相对路径引用图片（本地图片）</h2>
+    <p>相对路径：<code>../images/local.jpg</code> （因为HTML文件在html/文件夹内，图片在上级的images/文件夹）</p>
+    <img src="../images/local.jpg" alt="相对路径图片">
+    <div class="image-caption">图2：相对路径引用（../images/local.jpg）</div>
+
+    <p>以上演示了两种图片引用方式。感谢访问！</p>
+</div>
+</body>
+</html>
